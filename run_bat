@@ -1,0 +1,14 @@
+#!/bin/zsh
+
+for file in `ls out/`
+do
+#   echo ${file}
+  python3 ../yoloface/yoloface.py \
+      --model-cfg '../yoloface/cfg/yolov3-face.cfg' \
+      --model-weights '../yoloface/model-weights/yolov3-wider_16000.weights' \
+      --image out/${file}  \
+      --output-dir './outputs'
+done
+  #open cut.bmp
+
+exit

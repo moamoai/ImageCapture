@@ -1,3 +1,4 @@
 out/*
 outputs/*
 __pycache__/*
+train_data/*

@@ -1,5 +1,9 @@
 #!/bin/zsh
 
+python3 ImageTriming.py
+python3 mkTrainData.py
+exit
+
 for file in `ls out/`
 do
 #   echo ${file}
